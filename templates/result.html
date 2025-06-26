@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Decoded Wi-Fi Info</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+</head>
+<body class="bg-green-50 min-h-screen flex flex-col items-center justify-center">
+  <div class="bg-white p-6 rounded-xl shadow-xl text-center max-w-md w-full">
+    <h1 class="text-2xl font-bold text-green-700 mb-4">✅ Wi-Fi Info Decoded</h1>
+    <p><strong>SSID:</strong> {{ ssid if ssid else 'Not found' }}</p>
+    <p><strong>Password:</strong> {{ password if password else 'Not found' }}</p>
+    <p class="mt-2 text-xs text-gray-400">Raw data: {{ raw }}</p>
+    <a href="/" class="mt-4 inline-block text-blue-600 hover:underline">🔁 Decode another QR code</a>
+  </div>
+</body>
+</html>
